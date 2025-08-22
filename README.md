@@ -68,4 +68,14 @@ The main objective of this project is to deepen understanding of how React inter
 ##  Project Structure
 
 A typical layout could look like this:
-
+FoodApplication/
+├── public/ # Static files (e.g., index.html)
+├── src/
+│ ├── components/ # Reusable React components
+│ ├── services/ # API interaction utilities (e.g., axios instances)
+│ ├── App.jsx # Main app component
+│ └── main.jsx # React entry point
+├── README.md # <-- You are here
+├── package.json
+├── vite.config.js
+└── eslint.config.js
