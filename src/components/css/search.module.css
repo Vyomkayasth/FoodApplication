@@ -1,0 +1,67 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* border: 1px solid black; */
+  align-items: center;
+}
+.searchInput {
+  border: none;
+  outline: none;
+  width: 25%;
+  height: 2.4em;
+  color: rgba(0, 0, 0, 0.744);
+  border-radius: 15px;
+  padding: 0.8em;
+  padding-left: 14px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+  font-size: 15px;  
+}
+.searchInput:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
+}
+.showBtn {
+  --color: rgb(255, 239, 94);
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2em;
+  /* line-height: 2.5em; */
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.728);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+.showBtn::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.showBtn:hover {
+  color: black;
+}
+
+.showBtn:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
