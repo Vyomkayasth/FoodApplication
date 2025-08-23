@@ -3,7 +3,7 @@
 A React + Vite project aimed at **learning how to fetch data from external APIs** and present it in a responsive, dynamic UI.
 
 ---
-# ScreenShot
+## ScreenShot
 
 <img width="1599" height="899" alt="Screenshot 2025-08-23 101817" src="https://github.com/user-attachments/assets/ba7608a9-075b-45d4-a234-c78b6142f124" />
 
